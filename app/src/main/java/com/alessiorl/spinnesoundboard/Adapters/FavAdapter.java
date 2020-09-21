@@ -28,10 +28,10 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.ViewHolder> {
     private DatabaseReference refLike;
     private AudioPlayer player;
 
-    public FavAdapter(Context context, List<FavItem> favItemList) {
+    public FavAdapter(Context context, List<FavItem> favItemList, AudioPlayer player ) {
         this.context = context;
         this.favItemList = favItemList;
-        this.player = new AudioPlayer();
+        this.player = player;
     }
 
     @NonNull

@@ -4,33 +4,53 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.alessiorl.spinnesoundboard.Adapters.FavAdapter;
+import com.alessiorl.spinnesoundboard.Helpers.AudioPlayer;
 import com.alessiorl.spinnesoundboard.Helpers.FavDB;
 import com.alessiorl.spinnesoundboard.Helpers.FavItem;
+import com.alessiorl.spinnesoundboard.Helpers.Sound;
 import com.alessiorl.spinnesoundboard.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
-public class DashboardFragment extends Fragment {
+public class FavoritesFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private FavDB favDB;
     private List<FavItem> favItemList = new ArrayList<>();
     private FavAdapter favAdapter;
+    private AudioPlayer player = new AudioPlayer();
+
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
+
 
         favDB = new FavDB(getActivity());
         recyclerView = root.findViewById(R.id.recyclerView);
@@ -66,7 +86,7 @@ public class DashboardFragment extends Fragment {
             db.close();
         }
 
-        favAdapter = new FavAdapter(getActivity(), favItemList);
+        favAdapter = new FavAdapter(getActivity(), favItemList, player);
 
         recyclerView.setAdapter(favAdapter);
 
@@ -91,4 +111,19 @@ public class DashboardFragment extends Fragment {
         }
     };
 
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        inflater.inflate(R.menu.top_menu, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Random rand = new Random();
+        FavItem fav = this.favItemList.get(rand.nextInt(favItemList.size()));
+        player.playSound(getActivity(), fav.getResourceID(), 1 );
+        Toast.makeText(requireActivity(), "Playing: "+ fav.getItem_title(), Toast.LENGTH_SHORT).show();
+        return super.onOptionsItemSelected(item);
+    }
 }

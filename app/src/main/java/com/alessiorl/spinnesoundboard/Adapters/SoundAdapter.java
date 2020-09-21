@@ -30,10 +30,10 @@ public class SoundAdapter extends RecyclerView.Adapter<SoundAdapter.ViewHolder> 
     private Context context;
     private FavDB favDB;
 
-    public SoundAdapter(ArrayList<Sound> soundItems, Context context) {
+    public SoundAdapter(ArrayList<Sound> soundItems, Context context, AudioPlayer player) {
         this.soundItems = soundItems;
         this.context = context;
-        this.player = new AudioPlayer();
+        this.player = player;
 
     }
 

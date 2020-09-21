@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.alessiorl.spinnesoundboard.Fragments.DashboardFragment"
+        android:name="com.alessiorl.spinnesoundboard.Fragments.FavoritesFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
