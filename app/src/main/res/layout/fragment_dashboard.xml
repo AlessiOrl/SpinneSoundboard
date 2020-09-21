@@ -7,7 +7,7 @@
 
     <com.scwang.smartrefresh.layout.header.FalsifyHeader
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -22,9 +22,10 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/bottom_scroll_fav"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:src="@drawable/bottom_scroll"/>
+            android:src="@drawable/hng_bottom_scroll" />
 
     </com.scwang.smartrefresh.layout.footer.FalsifyFooter>
 </com.scwang.smartrefresh.layout.SmartRefreshLayout>

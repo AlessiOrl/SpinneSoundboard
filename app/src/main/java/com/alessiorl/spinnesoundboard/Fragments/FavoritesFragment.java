@@ -46,7 +46,6 @@ public class FavoritesFragment extends Fragment {
         setHasOptionsMenu(true);
     }
 
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_dashboard, container, false);

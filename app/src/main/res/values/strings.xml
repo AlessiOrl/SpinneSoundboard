@@ -4,5 +4,7 @@
     <string name="title_dashboard">Favorites</string>
     <string name="title_notifications">Settings</string>
     <string name="action_random">Random</string>
+    <drawable name="bottom_light">@drawable/hng_bottom_scroll</drawable>
+    <drawable name="bottom_dark">@drawable/hng_bottom_scroll_dark</drawable>
 
 </resources>
