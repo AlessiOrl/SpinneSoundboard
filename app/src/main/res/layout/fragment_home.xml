@@ -13,9 +13,10 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="?attr/actionBarSize"
         android:clipToPadding="false"
-        android:overScrollMode="never"/>
+        android:overScrollMode="never"
+        android:padding="2dp"
+        android:paddingBottom="?attr/actionBarSize" />
 
     <com.scwang.smartrefresh.layout.footer.FalsifyFooter
         android:layout_width="match_parent"

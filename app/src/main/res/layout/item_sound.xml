@@ -11,7 +11,7 @@
     android:layout_marginEnd="8dp"
     android:elevation="3dp"
     android:orientation="vertical"
-    app:cardBackgroundColor="@color/colorPrimary"
+
     app:cardCornerRadius="8dp">
 
     <TextView
@@ -26,10 +26,10 @@
         android:layout_marginBottom="8dp"
         android:gravity="start|center_vertical"
         android:maxWidth="330dp"
-        android:maxHeight="40dp"
-        android:minHeight="74dp"
+        android:maxHeight="74dp"
+        android:minHeight="48dp"
         android:text="Latte"
-        android:textColor="#fff" />
+        android:textColor="#000000" />
 
     <LinearLayout
         android:id="@+id/linearLayout"

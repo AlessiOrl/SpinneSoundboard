@@ -5,6 +5,7 @@
         <item>Bello!</item>
         <item>Boh</item>
         <item>Carry On, Carry On</item>
+        <item>Chiappalo</item>
         <item>Chi è?!</item>
         <item>Chi é!?</item>
         <item>Dio bono</item>
@@ -12,13 +13,14 @@
         <item>Levateve</item>
         <item>Ma che è</item>
         <item>Ma chi è</item>
+        <item>Madonna si te chiappo</item>
         <item>NOH</item>
+        <item>PEW PEW</item>
         <item>Roberto Carlos</item>
         <item>Ronaldinho</item>
         <item>Sasi</item>
         <item>Schedina song</item>
         <item>Senza di te</item>
-        <item>Si te chiappo</item>
         <item>Te sderinu</item>
         <item>TuzTuz</item>
         <item>Un colpo</item>
@@ -30,10 +32,11 @@
     </string-array>
 
     <integer-array name="ids">
-        <item>@raw/risata</item>
+        <item>@raw/ahah</item>
         <item>@raw/bello</item>
         <item>@raw/boh</item>
         <item>@raw/carryoncarryon</item>
+        <item>@raw/chiappalo</item>
         <item>@raw/chie</item>
         <item>@raw/chie2</item>
         <item>@raw/diobono</item>
@@ -41,21 +44,21 @@
         <item>@raw/levatevedaldiavulo</item>
         <item>@raw/machee</item>
         <item>@raw/machie</item>
+        <item>@raw/madonnasitechiappo</item>
         <item>@raw/noh</item>
-
+        <item>@raw/pewpew</item>
         <item>@raw/robertocarlos</item>
         <item>@raw/ronaldinho</item>
         <item>@raw/sasi</item>
         <item>@raw/schedina</item>
         <item>@raw/senza</item>
-        <item>@raw/madonnasitechiappo</item>
         <item>@raw/tesdirino</item>
         <item>@raw/tuztuz</item>
         <item>@raw/uncolpo</item>
         <item>@raw/vabene</item>
         <item>@raw/w8what</item>
         <item>@raw/what</item>
-        <item>@raw/what3</item>
+        <item>@raw/what2</item>
         <item>@raw/zumba</item>
     </integer-array>
 </resources>

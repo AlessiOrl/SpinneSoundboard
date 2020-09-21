@@ -1,5 +1,7 @@
 package com.alessiorl.spinnesoundboard.Activities;
 
+import android.app.ActionBar;
+import android.app.Notification;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
