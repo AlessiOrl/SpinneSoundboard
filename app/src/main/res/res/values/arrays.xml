@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="labels">
+        <item>AHAH</item>
+        <item>Bello!</item>
+        <item>Boh</item>
+        <item>Carry On, Carry On</item>
+        <item>Chi è?!</item>
+        <item>Chi é!?</item>
+        <item>Dio bono</item>
+        <item>Disinstallo</item>
+        <item>Levateve</item>
+        <item>Ma che è</item>
+        <item>Ma chi è</item>
+        <item>NOH</item>
+        <item>Roberto Carlos</item>
+        <item>Ronaldinho</item>
+        <item>Sasi</item>
+        <item>Schedina song</item>
+        <item>Senza di te</item>
+        <item>Si te chiappo</item>
+        <item>Te sderinu</item>
+        <item>TuzTuz</item>
+        <item>Un colpo</item>
+        <item>Va bene</item>
+        <item>W8 What</item>
+        <item>What</item>
+        <item>What2</item>
+        <item>Zu-Zumba</item>
+    </string-array>
+
+    <integer-array name="ids">
+        <item>@raw/risata</item>
+        <item>@raw/bello</item>
+        <item>@raw/boh</item>
+        <item>@raw/carryoncarryon</item>
+        <item>@raw/chie</item>
+        <item>@raw/chie2</item>
+        <item>@raw/diobono</item>
+        <item>@raw/disistallo</item>
+        <item>@raw/levatevedaldiavulo</item>
+        <item>@raw/machee</item>
+        <item>@raw/machie</item>
+        <item>@raw/noh</item>
+
+        <item>@raw/robertocarlos</item>
+        <item>@raw/ronaldinho</item>
+        <item>@raw/sasi</item>
+        <item>@raw/schedina</item>
+        <item>@raw/senza</item>
+        <item>@raw/madonnasitechiappo</item>
+        <item>@raw/tesdirino</item>
+        <item>@raw/tuztuz</item>
+        <item>@raw/uncolpo</item>
+        <item>@raw/vabene</item>
+        <item>@raw/w8what</item>
+        <item>@raw/what</item>
+        <item>@raw/what3</item>
+        <item>@raw/zumba</item>
+    </integer-array>
+</resources>
