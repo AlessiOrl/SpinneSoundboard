@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "955344794536",
+    "firebase_url": "https://spinnesoundboard.firebaseio.com",
+    "project_id": "spinnesoundboard",
+    "storage_bucket": "spinnesoundboard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955344794536:android:e1120ea0e194db195ce39d",
+        "android_client_info": {
+          "package_name": "com.alessiorl.spinnesoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955344794536-kikcda4h6a0f60uohe72hbjuhv041rb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM4KVE0xbYa-jNYCgcjBNCuP5DVyuouoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955344794536-kikcda4h6a0f60uohe72hbjuhv041rb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
