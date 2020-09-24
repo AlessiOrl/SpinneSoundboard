@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.alessiorl.spinnesoundboard">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+
+
 
     <application
         android:name="com.alessiorl.spinnesoundboard.Helpers.FirebaseApp"
@@ -21,6 +24,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:enabled="true" android:name=".Widget.BackgroundSoundService" />
+        <receiver android:name=".Widget.SpinneAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidgetprovider" />
+        </receiver>
     </application>
 
 </manifest>

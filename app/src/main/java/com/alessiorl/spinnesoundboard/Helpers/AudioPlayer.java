@@ -14,7 +14,7 @@ public class AudioPlayer {
 
     private SimpleExoPlayer player;
 
-    private void stopSound() {
+    public void stopSound() {
         if (player != null) {
             player.release();
             player = null;
