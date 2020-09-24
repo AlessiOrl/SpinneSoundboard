@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
 
-
     <application
         android:name="com.alessiorl.spinnesoundboard.Helpers.FirebaseApp"
         android:allowBackup="true"
@@ -24,8 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:enabled="true" android:name=".Widget.BackgroundSoundService" />
-        <receiver android:name=".Widget.SpinneAppWidgetProvider">
+        <receiver android:name=".Widget.AskSpinneWidgetProvider" android:label="Ask Spinne">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -33,6 +31,8 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/appwidgetprovider" />
         </receiver>
+        <service android:enabled="true" android:name=".Widget.BackgroundSoundService" />
+
     </application>
 
 </manifest>

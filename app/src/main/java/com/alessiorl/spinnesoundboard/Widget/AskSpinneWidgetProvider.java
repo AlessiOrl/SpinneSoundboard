@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 
-public class SpinneAppWidgetProvider extends AppWidgetProvider {
+public class AskSpinneWidgetProvider extends AppWidgetProvider {
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {

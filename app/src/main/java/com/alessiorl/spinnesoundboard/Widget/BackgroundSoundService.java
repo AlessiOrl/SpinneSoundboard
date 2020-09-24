@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
+import android.view.Gravity;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -21,6 +22,8 @@ public class BackgroundSoundService extends Service {
     private ArrayList<Sound> soundItems;
     private AudioPlayer player;
 
+
+    
     @Override
     public void onCreate() {
         super.onCreate();
@@ -64,7 +67,8 @@ public class BackgroundSoundService extends Service {
         Random rand = new Random();
         Sound sound = this.soundItems.get(rand.nextInt(soundItems.size()));
         player.playSound(this, sound.getResourceId(), 1);
-        Toast.makeText(this, "Playing: " + sound.getTitle(), Toast.LENGTH_SHORT).show();
+        Toast toast = Toast.makeText(context, sound.getTitle(), Toast.LENGTH_SHORT);
+        toast.show();
     }
 
     public class LocalBinder extends Binder {
